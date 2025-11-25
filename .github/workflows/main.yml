@@ -1,0 +1,11 @@
+name: Contenedor Docker
+on: [push]
+
+jobs:
+  run-in-container:
+    runs-on: ubuntu-latest
+    container: alpine:latest
+    
+    steps:
+      - name: Ejecutar en contenedor
+        run: echo "¡Acción completada desde Docker!"
